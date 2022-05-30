@@ -26,7 +26,6 @@ export default {
         return {
             username: 'myuseer',
             password: 'zasx',
-            submitted: false
         }
     },
     computed: {
@@ -45,23 +44,13 @@ export default {
     },
     methods: {
         login: function() {
-        let username = this.username
-        let password = this.password
+          let username = this.username
+          let password = this.password
 
-        this.$store.dispatch('login', { username, password })
-          .then(() => this.$router.push('/'))
-          .catch(err => console.log(err))
-        },
-        handleSubmit () {
-            /*
-            this.submitted = true;
-            const { username, password } = this;
-            const { dispatch } = this.$store;
-            if (username && password) {
-                dispatch('authentication/login', { username, password });
-            }
-            */
-        }
+          this.$store.dispatch('login', { username, password })
+            .then(() => this.$router.push('/'))
+            .catch(err => console.log(err))
+          },
     }
 };
 </script>

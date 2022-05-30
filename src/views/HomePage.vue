@@ -2,9 +2,9 @@
     <div>
         <br>
         <div>
-            <button type="button" class="btn btn-primary"> Vypsat data</button>
+            <button @click="getData"  type="button" class="btn btn-primary"> Vypsat data</button>
             <button type="button" class="btn btn-primary"> Info Uzivatele</button>
-            <button type="button" class="btn btn-primary"> Odhlasit se</button>
+            <button @click="logout" type="button" class="btn btn-primary"> Odhlasit se</button>
         </div>
         <hr>
         <div>
@@ -16,6 +16,9 @@
 </template>
 
 <script>
+/* eslint-disable */
+import * as axios from "axios";
+
 export default {
     computed: {
         /*
@@ -34,7 +37,23 @@ export default {
         logout: function () {
             this.$store.dispatch('logout')
                 .then(() => {
-            this.$router.push('/login')
+                    this.$router.push('/login')
+                })
+      },
+
+      getData: function (){
+        // const config = {
+        //     baseURL: 'https://api.rec.devel.prozeta.net',// ip откуда это берём
+        // };
+        // config.headers = {'Authorization': `Bearer ${tokenStr}`}
+        axios.get('https://api.rec.devel.prozeta.net/data.json')
+            .then(resp=>{
+                console.log(resp)
+                debugger
+            })
+            .catch(err=>{
+                console.log(err)
+                debugger
             })
       }
     }

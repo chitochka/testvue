@@ -1,22 +1,24 @@
 import axios from 'axios'
 import qs from 'qs'
 
-const config = {
-    baseURL : 'http://localhost:8080/auth/realms/mymy/protocol/openid-connect/token',
-    params :{
-        grant_type : 'password',
-        client_id : 'demo'
-    }
-}
+// const config = {
+//     baseURL : 'http://localhost:8080/auth/realms/mymy/protocol/openid-connect/token',
+//     params :{
+//         grant_type : 'password',
+//         client_id : 'demo'
+//     }
+// }
 
 
-/*
+
 const config = {
     baseURL : 'https://auth0.prozeta.net/auth/realms/Recruitment/protocol/openid-connect/token',
-    grant_type : 'password',
-    client_id : 'oauth-proxy-rec'
-}
-*/
+    params :{
+        grant_type : 'password',
+        client_id : 'oauth-proxy-rec'
+    }
+ }
+
 
 
 var apiConfig  = {
