@@ -1,17 +1,30 @@
 <template>
     <div>
-        <br>
-        <div>
-            <button @click="getData"  type="button" class="btn btn-primary"> Vypsat data</button>
-            <button type="button" class="btn btn-primary"> Info Uzivatele</button>
-            <button @click="logout" type="button" class="btn btn-primary"> Odhlasit se</button>
+        <div class="container-fluid">
+            <div class="row bg-dark">
+                <header
+                    class="  d-flex  flex-wrap  align-items-center  justify-content-center justify-content-md-between  py-3  mb-1 text-nowrap  ">
+                    <ul class="nav col-9 justify-content-start mb-md-0 ">
+                        <li class="nav-item"><a href="#" class="nav-link px-2  active">Vypsat data</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 ">Info Uzivatele</a></li>
+                    </ul>
+
+                    <div class="col-3 text-end">
+                        <button @click="logout" type="button" class="btn btn-outline-danger"> Odhlasit se </button>
+                    </div>
+                </header>
+            </div>
         </div>
-        <hr>
-        <div>
-            <!-- <h1>Hi {{user.firstName}}!</h1> -->
-            <h2>Home Page</h2>
-            <p> <!-- <router-link to="/login">Logout</router-link> --></p>
+
+        <div class="container"></div>
+        <div class="row mx-2 px-3">
+            <div class="col mx-2 px-3">
+                <h2>1Home Page</h2>
+                <h2>2Home Page</h2>
+                <h2>3Home Page</h2>
+            </div>
         </div>
+    </div>
     </div>
 </template>
 
@@ -19,51 +32,37 @@
 /* eslint-disable */
 import * as axios from "axios";
 
+
+
 export default {
     computed: {
-        /*
-        user () {
-            return this.$store.state.authentication.user;
-        },
-        users () {
-            return this.$store.state.users.all;
-        }
-        */
     },
-    created () {
-        // this.$store.dispatch('users/getAll');
+    created() {
     },
     methods: {
         logout: function () {
-            this.$store.dispatch('logout')
-                .then(() => {
-                    this.$router.push('/login')
-                })
-      },
+            this.$store.dispatch("logout").then(() => {
+                this.$router.push("/login");
+            });
+        },
 
-      getData: function (){
-        // const config = {
-        //     baseURL: 'https://api.rec.devel.prozeta.net',// ip откуда это берём
-        // };
-        // config.headers = {'Authorization': `Bearer ${tokenStr}`}
-        axios.get('https://api.rec.devel.prozeta.net/data.json')
-            .then(resp=>{
-                console.log(resp)
-                debugger
-            })
-            .catch(err=>{
-                console.log(err)
-                debugger
-            })
-      }
-    }
-        
+        getData: function () {
+            // const config = {
+            //     baseURL: 'https://api.rec.devel.prozeta.net',// ip откуда это берём
+            // };
+            // config.headers = {'Authorization': `Bearer ${tokenStr}`}
+            axios
+                .get("https://api.rec.devel.prozeta.net/data.json")
+                .then((resp) => {
+                    console.log(resp);
+                    debugger;
+                })
+                .catch((err) => {
+                    console.log(err);
+                    debugger;
+                });
+        },
+    },
 };
 </script>
 
-
-<style scoped>
-    button {
-        margin: 5px 10px;
-    }
-</style>

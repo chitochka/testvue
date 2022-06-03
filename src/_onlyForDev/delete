@@ -1,3 +1,5 @@
 d:
 cd D:\_Develop\TOKEN\old keycloak\keycloak-18.0.0\bin
 standalone.bat
+
+
