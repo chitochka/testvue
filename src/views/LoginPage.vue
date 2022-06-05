@@ -24,7 +24,7 @@
   </div>
 </template>
 
-<script>
+<script>ter
 export default {
   data() {
     return {
