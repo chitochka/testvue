@@ -1,0 +1,29 @@
+{
+  "latitude": -82.593128,
+  "longitude": 19.573563,
+  "tags": [
+    "consectetur",
+    "occaecat",
+    "ullamco",
+    "aliquip",
+    "ea",
+    "commodo",
+    "velit"
+  ],
+  "friends": [
+    {
+      "id": 0,
+      "name": "Josephine Porter"
+    },
+    {
+      "id": 1,
+      "name": "Angie Fowler"
+    },
+    {
+      "id": 2,
+      "name": "Sofia Woodard"
+    }
+  ],
+  "greeting": "Hello, Blanche Gay! You have 5 unread messages.",
+  "favoriteFruit": "apple"
+}
