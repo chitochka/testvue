@@ -11,6 +11,14 @@ const config = {
 
 
 
+/*
+
+username
+alexey.latyshev
+password
+prozetapass
+
+*/
 // const config = {
 //     baseURL : 'https://auth0.prozeta.net/auth/realms/Recruitment/protocol/openid-connect/token',
 //     params :{
@@ -18,6 +26,7 @@ const config = {
 //         client_id : 'oauth-proxy-rec'
 //     }
 //  }
+
 
 
 

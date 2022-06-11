@@ -1,29 +1,87 @@
-{
-  "latitude": -82.593128,
-  "longitude": 19.573563,
-  "tags": [
-    "consectetur",
-    "occaecat",
-    "ullamco",
-    "aliquip",
-    "ea",
-    "commodo",
-    "velit"
-  ],
-  "friends": [
-    {
-      "id": 0,
-      "name": "Josephine Porter"
-    },
-    {
-      "id": 1,
-      "name": "Angie Fowler"
-    },
-    {
-      "id": 2,
-      "name": "Sofia Woodard"
-    }
-  ],
-  "greeting": "Hello, Blanche Gay! You have 5 unread messages.",
-  "favoriteFruit": "apple"
-}
+[
+  {
+    "id": "627004dd709bf",
+    "index": 0,
+    "isActive": true,
+    "balance": "$1,289.39",
+    "age": 27,
+    "eyeColor": "blue",
+        "email": "cekim@tal.com",
+    "phone": "+1 (924) 36 31",
+        "registered": "2020-05-22T03:01:53 -02:00",
+    "latitude": -8.769858,
+    "longitude": 4.921154,
+    "tags": [
+      "Lorem",
+      "voluptate",
+      "ad",
+      "irure"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Маша"
+      },
+      {
+        "id": 1,
+        "name": "Костя"
+      }
+    ]
+  },
+  {
+    "id": "627004d8919653a",
+    "index": 1,
+    "isActive": false,
+    "balance": "$2,444.16",
+    "age": 39,
+    "eyeColor": "blue",
+        "email": "hoacruz@comn.com",
+    "phone": "+1 (974) 34 64",
+        "registered": "2016-08-27T05:34:01 -02:00",
+    "latitude": -7.565175,
+    "longitude": -51.979259,
+    "tags": [
+      "id",
+      "Lorem",
+      "duis"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Вася"
+      },
+      {
+        "id": 1,
+        "name": "Петя"
+      }
+    ]
+  },
+  {
+    "id": "6270992c7d",
+    "index": 2,
+    "isActive": true,
+    "balance": "$3,809.71",
+    "age": 39,
+    "eyeColor": "brown",
+        "email": "nolaraft@meex.com",
+    "phone": "+1 (830) 37 17",
+        "registered": "2021-06-18T03:53:30 -02:00",
+    "latitude": 57.591511,
+    "longitude": 79.357919,
+    "tags": [
+      "sit",
+      "enim",
+      "duis"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Оля"
+      },
+      {
+        "id": 1,
+        "name": "Таня"
+      }
+    ]
+  }
+]

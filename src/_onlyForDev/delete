@@ -3,3 +3,8 @@ cd D:\_Develop\TOKEN\old keycloak\keycloak-18.0.0\bin
 standalone.bat
 
 
+
+
+
+
+https://api.rec.devel.prozeta.net/oauth2/userinfo

@@ -48,17 +48,21 @@ export default {
 </script>
 
 <style>
-
 #docasne {
   position: fixed;
   right: 0;
   left: 0;
   bottom: 0;
   height: 40px;
-  background: black;
+  /* background: black; */
   color: yellow;
   padding-top: 7px;
   text-align: center;
+  opacity: 0.6;
+}
+#docasne:hover {
+  opacity: 1;
+  background: black;
 }
 
 /************* */

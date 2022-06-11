@@ -40,11 +40,8 @@
       <div class="col mx-2 px-3">
         <br />
         <div id="forData">
-            <MyTable></MyTable>
+          <MyTable :data="this.dataJSON" :thead="true"></MyTable>
         </div>
-        <h2>1Home Page</h2>
-        <h2>2Home Page</h2>
-        <h2>3Home Page</h2>
       </div>
     </div>
   </div>
@@ -53,7 +50,9 @@
 <script>
 /* eslint-disable */
 import * as axios from "axios";
-import dataJSON from "@/_onlyForDev/data.json";
+// import dataJSON from "@/_onlyForDev/datatest.json";
+// import dataJSON from "@/_onlyForDev/data.json";
+import dataJSON from "@/_onlyForDev/datamy.json";
 import MyTable from "@/components/MyTable.vue";
 
 export default {
@@ -63,12 +62,11 @@ export default {
     };
   },
   components: {
-      MyTable
+    MyTable,
   },
   computed: {},
   created() {
     console.log(dataJSON);
-
   },
   methods: {
     logout: function () {
