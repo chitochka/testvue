@@ -50,10 +50,11 @@ export default {
 <style>
 #docasne {
   position: fixed;
-  right: 0;
+  /* right: 0; */
   left: 0;
-  bottom: 0;
+  bottom: 20px;
   height: 40px;
+  width: 130px;
   /* background: black; */
   color: yellow;
   padding-top: 7px;

@@ -33,9 +33,9 @@
           </div>
         </header>
       </div>
-    </div>
+   
 
-    <div class="container"></div>
+    <!-- <div class="container"></div> -->
     <div class="row mx-2 px-3">
       <div class="col mx-2 px-3">
         <br />
@@ -44,6 +44,7 @@
         </div>
       </div>
     </div>
+     </div>
   </div>
 </template>
 
@@ -51,8 +52,8 @@
 /* eslint-disable */
 import * as axios from "axios";
 // import dataJSON from "@/_onlyForDev/datatest.json";
-// import dataJSON from "@/_onlyForDev/data.json";
-import dataJSON from "@/_onlyForDev/datamy.json";
+import dataJSON from "@/_onlyForDev/data.json";
+// import dataJSON from "@/_onlyForDev/datamy.json";
 import MyTable from "@/components/MyTable.vue";
 
 export default {
@@ -95,3 +96,11 @@ export default {
 };
 </script>
 
+
+
+<style scoped>
+#forData{
+  overflow: auto;
+
+}
+</style>

@@ -4,7 +4,12 @@
       "index": 0,
       "isActive": true,
       "balance": "$1,289.39",
-      "arr": [1,2,3,4],
+      "deepArr" :[[11,22],[33,44]],
+      "tags": [
+        "id",
+        "Lorem",
+        "duis"
+      ],
        "friends": [
         {
           "id": 0,
@@ -21,7 +26,12 @@
       "index": 2,
       "isActive": true,
       "balance": "$1,39",
-      "arr": [5,6,7,8],
+      "deepArr" :[[55,66],[77,88]],
+      "tags": [
+        "veniam",
+        "nostrud",
+        "laborum"
+      ],
       "friends": [
         {
           "id": 0,
