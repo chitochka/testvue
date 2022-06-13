@@ -2,7 +2,8 @@ import axios from 'axios'
 import qs from 'qs'
 
 const config = {
-    baseURL : 'http://localhost:8080/auth/realms/mymy/protocol/openid-connect/token',
+    // baseURL : 'http://localhost:8080/auth/realms/mymy/protocol/openid-connect/token',
+    baseURL : 'http://192.168.0.25:8080/auth/realms/mymy/protocol/openid-connect/token',
     params :{
         grant_type : 'password',
         client_id : 'demo'
